@@ -148,8 +148,9 @@ p {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 200vh;
-			   background-color:#000000;
+            height: 100vh;
+			   background-image:url("image/jiafei_hq_Cropped.jpg");
+			   
         }
         .button {
             background-color: #4CAF50;
@@ -220,4 +221,173 @@ p {
         }
         .overlay:hover .play-icon {
             transform: scale(1.2);
+        }
+.call-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.call-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.call-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.call-info {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.call-status {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.call-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-end {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.call-end:hover {
+  background-color: #f9d5e5;
+}
+.containernew {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			   background-color:whitesmoke;
+			   
+        }
+.audio-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.audio-button1 {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007aff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.audio-button1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.audio-button1:hover:before {
+  width: 500px;
+  height: 500px;
+}
+
+#audio-player {
+  display: none;
+}
+.image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.image-container.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  animation: image-zoom 0.3s ease;
+}
+
+@keyframes image-zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.show-image-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.show-image-button:hover {
+  transform: scale(1.1);
+}
+.containernew1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+			   background-color:whitesmoke;
+			   
         }
