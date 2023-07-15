@@ -149,7 +149,7 @@ p {
             justify-content: center;
             align-items: center;
             height: 100vh;
-			   background-image:url("image/jiafei_hq_Cropped.jpg");
+			   background-image:url("jiafei_hq_Cropped.jpg");
 			   
         }
         .button {
@@ -291,6 +291,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
+	background-color: whitesmoke;
 }
 
 .audio-button1 {
@@ -387,7 +388,13 @@ p {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 20vh;
+            height: 30vh;
 			   background-color:whitesmoke;
 			   
         }
+.audio-buttons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
