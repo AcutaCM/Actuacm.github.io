@@ -388,7 +388,7 @@ p {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 30vh;
+            height: 10vh;
 			   background-color:whitesmoke;
 			   
         }
@@ -397,4 +397,13 @@ p {
   justify-content: center;
   align-items: center;
   height: 50vh;
+}
+.containernew2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+background-color:whitesmoke;
+
 }
